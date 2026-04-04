@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
+import websitecfitel from '../assets/projects-img/websitecfitel.png'
+import redstore from '../assets/projects-img/redstore.png'
+
 
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -8,64 +11,34 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce API',
-      description: 'API RESTful completa para e-commerce com autenticação JWT, gerenciamento de produtos e processamento de pedidos.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop',
-      technologies: ['Java', 'Spring Boot', 'MySQL'],
-      category: 'backend',
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: 'Website CFITEL',
+      description: 'Website institucional desenvolvido para o CFITEL — Centro de Formação dedicado ao desenvolvimento profissional e técnico de estudantes e trabalhadores.',
+      image: websitecfitel,
+      technologies: ['HTML', 'CSS', 'JS'],
+      category: 'frontend',
+      github: 'https://github.com/ajudiao/website-cfitel',
+      demo: 'https://ajudiao.github.io/website-cfitel/',
     },
     {
       id: 2,
-      title: 'Task Manager',
-      description: 'Sistema de gerenciamento de tarefas com interface moderna, drag & drop e sincronização em tempo real.',
-      image: 'https://images.unsplash.com/photo-1555952494-6ef4c3e37753?w=500&h=300&fit=crop',
-      technologies: ['React', 'JavaScript', 'Tailwind CSS'],
+      title: 'App Pomodoro',
+      description: 'A aplicação ajuda a organizar o tempo de estudo ou trabalho utilizando a técnica Pomodoro, com interface limpa e responsiva.',
+      image: 'https://raw.githubusercontent.com/ajudiao/app-pomodoro/refs/heads/main/src/assets/pomodoro-preview.png',
+      technologies: ['React', 'Styled Components', 'TypeScript'],
       category: 'frontend',
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      github: 'https://github.com/ajudiao/app-pomodoro',
+      demo: 'https://indisponivel.com',
     },
     {
       id: 3,
-      title: 'Blog CMS',
-      description: 'Sistema de gerenciamento de conteúdo para blogs com editor WYSIWYG e sistema de comentários.',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
-      technologies: ['PHP', 'Bootstrap', 'MySQL'],
+      title: 'RedStore',
+      description: 'Este projeto consiste no desenvolvimento da interface de um website de e-commerce, utilizando apenas HTML, CSS e JavaScript.',
+      image: redstore,
+      technologies: ['HTML', 'CSS', 'JS'],
       category: 'backend',
-      github: 'https://github.com',
-      demo: 'https://example.com',
-    },
-    {
-      id: 4,
-      title: 'Weather App',
-      description: 'Aplicação de previsão do tempo com geolocalização, gráficos interativos e design responsivo.',
-      image: 'https://images.unsplash.com/photo-1507238691854-564bedd34d4d?w=500&h=300&fit=crop',
-      technologies: ['JavaScript', 'HTML5', 'CSS3'],
-      category: 'frontend',
-      github: 'https://github.com',
-      demo: 'https://example.com',
-    },
-    {
-      id: 5,
-      title: 'Chat App',
-      description: 'Aplicação de chat em tempo real com salas privadas, emojis e notificações push.',
-      image: 'https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=500&h=300&fit=crop',
-      technologies: ['Java', 'WebSocket', 'React'],
-      category: 'fullstack',
-      github: 'https://github.com',
-      demo: 'https://example.com',
-    },
-    {
-      id: 6,
-      title: 'Portfolio Site',
-      description: 'Site portfólio responsivo com animações, tema escuro/claro e otimização SEO.',
-      image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop',
-      technologies: ['React', 'Tailwind CSS', 'Vite'],
-      category: 'frontend',
-      github: 'https://github.com',
-      demo: 'https://example.com',
-    },
+      github: 'https://github.com/ajudiao/redstore-ecommerce-ui',
+      demo: 'https://ajudiao.github.io/redstore-ecommerce-ui/',
+      },
   ]
 
   const categories = [
