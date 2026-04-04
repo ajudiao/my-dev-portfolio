@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Code2, Zap, Users } from 'lucide-react'
 import ParticleBackground from '../components/ParticleBackground'
 import TechStack from '../components/TechStack'
+import andre from '../assets/andre.jpg'
 
 function Home() {
   const features = [
@@ -95,7 +96,7 @@ function Home() {
 
       {/* About Section */}
       <section className="py-20 px-4 md:px-8 bg-dark-800/50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="section-title">Sobre Mim</h2>
 
           <motion.div
@@ -113,7 +114,7 @@ function Home() {
             >
               <div className="w-80 h-80 mx-auto rounded-full border-4 border-primary overflow-hidden bg-dark-700">
                 <img
-                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop"
+                  src={andre}
                   alt="André Judião"
                   className="w-full h-full object-cover"
                 />
