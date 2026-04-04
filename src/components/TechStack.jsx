@@ -15,6 +15,10 @@ const TechStack = () => {
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
     },
     {
+      name: 'React Native',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    },
+    {
       name: 'Express',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
     },

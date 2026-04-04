@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Code2, Zap, Users } from 'lucide-react'
 import ParticleBackground from '../components/ParticleBackground'
 import TechStack from '../components/TechStack'
-import andre from '../assets/andre.jpg'
 
 function Home() {
-
   const features = [
     {
       icon: <Code2 size={32} />,
@@ -68,15 +66,15 @@ function Home() {
               className="text-xl md:text-2xl text-gray-300 mb-4"
               variants={itemVariants}
             >
-              (Ander.Dev)
+              (AnderDev)
             </motion.p>
 
             <motion.p
               className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto"
               variants={itemVariants}
             >
-              Crio experiências digitais com <span className="highlight">Front-end</span> moderno e
-              <span className="highlight"> Full Stack</span> sólido
+              Desenvolvedor Web apaixonado por <span className="highlight">Back-end</span> e
+              experiente em <span className="highlight">Front-end</span>
             </motion.p>
 
             <motion.div
@@ -113,9 +111,9 @@ function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="w-40 h-40 md:w-80 md:h-80 mx-auto rounded-full border-4 border-primary overflow-hidden bg-dark-700 shadow-lg">
+              <div className="w-80 h-80 mx-auto rounded-full border-4 border-primary overflow-hidden bg-dark-700">
                 <img
-                  src={andre}
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop"
                   alt="André Judião"
                   className="w-full h-full object-cover"
                 />
@@ -125,19 +123,17 @@ function Home() {
             {/* About Content */}
             <div className="space-y-6 text-gray-300">
               <p>
-                Desenvolvedor <strong>Full Stack</strong> com foco em <strong>front-end</strong>, criando
-                interfaces modernas, rápidas e intuitivas.
+                Sou um desenvolvedor <strong>full stack</strong>, com foco em <strong>front-end</strong> e experiência sólida em <strong>back-end</strong>. Adoro criar interfaces elegantes e funcionais, enquanto aplico meu conhecimento de servidor para construir aplicações completas e bem estruturadas.
               </p>
 
               <p>
-                Com base sólida em back-end, desenvolvo aplicações completas, bem estruturadas
-                e orientadas a boas práticas.
+                Como um verdadeiro <strong>nerd/geek</strong>, adoro explorar novas tecnologias, enfrentar desafios complexos e criar soluções criativas que combinem estética, usabilidade e performance. Acredito que código limpo e bem estruturado é a base de qualquer projeto de sucesso.
               </p>
 
               <p>
-                Transformo ideias em experiências digitais eficientes através de código limpo
-                e soluções inteligentes.
+                Minha jornada começou com curiosidade sobre como as coisas funcionam "por trás dos panos", e hoje transformo ideias em experiências digitais envolventes através do código.
               </p>
+
               <Link to="/contato" className="inline-block btn btn-primary mt-6">
                 Vamos Trabalhar Juntos
                 <ArrowRight size={20} />

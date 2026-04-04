@@ -15,13 +15,13 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-4">Ander.Dev</h3>
+            <h3 className="text-xl font-bold text-gradient mb-4">AnderDev</h3>
             <p className="text-gray-400 mb-6">
-              Crio experiências digitais com Front-end moderno e Full Stack sólido
+              Desenvolvedor Web apaixonado por criar soluções inovadoras e elegantes.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/ajudiao"
+                href="https://github.com/anderdev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 text-primary p-3 rounded-lg hover:bg-primary hover:text-dark-900 transition-all duration-300"
@@ -30,7 +30,7 @@ function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/andr%C3%A9-judi%C3%A3o-20b63434b/"
+                href="https://linkedin.com/in/andrejudiao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 text-primary p-3 rounded-lg hover:bg-primary hover:text-dark-900 transition-all duration-300"
@@ -39,7 +39,7 @@ function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:andrejudiao@gmail.com"
+                href="mailto:andre@anderdev.com"
                 className="bg-primary/10 text-primary p-3 rounded-lg hover:bg-primary hover:text-dark-900 transition-all duration-300"
                 aria-label="Email"
               >
@@ -74,8 +74,8 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-6">Contato</h4>
             <div className="space-y-3 text-gray-400">
-              <p>Email: andrejudiao@gmail.com</p>
-              <p>Localização: Angola</p>
+              <p>Email: andre@anderdev.com</p>
+              <p>Localização: Brasil</p>
               <p>Disponível para projetos freelance</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ function Footer() {
         {/* Divider */}
         <div className="border-t border-primary/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-400 text-center md:text-left">
-            © {currentYear} Ander.Dev. Todos os direitos reservados.
+            © {currentYear} AnderDev. Todos os direitos reservados.
           </p>
           <button
             onClick={scrollToTop}

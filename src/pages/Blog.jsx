@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react'
 
 function Blog() {
@@ -97,23 +98,26 @@ function Blog() {
           </p>
         </motion.div>
 
-        {/* Blog Posts */}
+        {/* Blog Posts Grid */}
         <motion.div
-          className="space-y-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {blogPosts.map((post) => (
-            <motion.article
+            <Link
               key={post.id}
-              className="bg-dark-700/50 border border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300 card-hover"
-              variants={itemVariants}
+              to={`/blog/${post.id}`}
             >
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+              <motion.article
+                className="bg-dark-700/50 border border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300 card-hover h-full flex flex-col group"
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+              >
                 {/* Post Image */}
                 <motion.div
-                  className="md:col-span-1 overflow-hidden rounded-lg h-48 md:h-auto"
+                  className="overflow-hidden rounded-t-xl h-48 relative"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -122,38 +126,38 @@ function Blog() {
                     alt={post.title}
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute top-4 right-4">
+                    <span className="tech-tag">{post.category}</span>
+                  </div>
                 </motion.div>
 
                 {/* Post Content */}
-                <div className="md:col-span-2 flex flex-col justify-between">
+                <div className="p-6 flex flex-col flex-1 justify-between">
                   <div>
-                    <div className="flex flex-wrap gap-3 mb-4">
-                      <span className="tech-tag">{post.category}</span>
-                      <span className="text-sm text-gray-400 flex items-center gap-2">
-                        <Calendar size={16} />
-                        {post.date}
-                      </span>
-                      <span className="text-sm text-gray-400">
-                        {post.readTime} de leitura
-                      </span>
+                    <div className="flex items-center gap-2 text-sm text-gray-400 mb-3">
+                      <Calendar size={16} />
+                      {post.date}
                     </div>
 
-                    <h3 className="text-2xl font-semibold text-white mb-3">
+                    <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2">
                       {post.title}
                     </h3>
 
-                    <p className="text-gray-400 mb-4">
+                    <p className="text-gray-400 text-sm mb-4 line-clamp-2">
                       {post.excerpt}
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-2 text-primary hover:gap-3 transition-all duration-300">
-                    <span className="font-semibold">Ler artigo</span>
-                    <ArrowRight size={18} />
+                  <div className="flex items-center justify-between pt-4 border-t border-primary/10">
+                    <span className="text-xs text-gray-500">{post.readTime}</span>
+                    <div className="flex items-center gap-2 text-primary group-hover:gap-3 transition-all duration-300">
+                      <span className="font-semibold text-sm">Ler</span>
+                      <ArrowRight size={16} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.article>
+              </motion.article>
+            </Link>
           ))}
         </motion.div>
 
