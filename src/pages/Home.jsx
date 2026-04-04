@@ -74,8 +74,7 @@ function Home() {
               className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto"
               variants={itemVariants}
             >
-              Desenvolvedor Web apaixonado por <span className="highlight">Back-end</span> e
-              experiente em <span className="highlight">Front-end</span>
+              Desenvolvedor <span className="highlight">Full Stack</span> com experiência sólida em <span className="highlight">Front-end</span>
             </motion.p>
 
             <motion.div

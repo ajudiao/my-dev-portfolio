@@ -19,7 +19,7 @@ function Header() {
       <nav className="max-w-6xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-gradient">
-          AnderDev
+          Ander.Dev
         </Link>
 
         {/* Menu Desktop */}

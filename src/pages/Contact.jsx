@@ -15,19 +15,19 @@ function Contact() {
     {
       icon: <Mail size={28} />,
       label: 'Email',
-      value: 'andre@anderdev.com',
-      href: 'mailto:andre@anderdev.com',
+      value: 'andrejudiao@gmail',
+      href: 'mailto:andrejudiao@gmail.com',
     },
     {
       icon: <Phone size={28} />,
       label: 'Telefone',
-      value: '+55 (XX) XXXXX-XXXX',
-      href: 'tel:+5511999999999',
+      value: '+244 944-921-970',
+      href: 'tel:+244944921970',
     },
     {
       icon: <MapPin size={28} />,
       label: 'Localização',
-      value: 'Brasil',
+      value: 'Angola',
       href: '#',
     },
   ]
@@ -36,17 +36,17 @@ function Contact() {
     {
       icon: <Github size={24} />,
       label: 'GitHub',
-      href: 'https://github.com/anderdev',
+      href: 'https://github.com/ajudiao',
     },
     {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/andrejudiao',
+      href: 'https://www.linkedin.com/in/andr%C3%A9-judi%C3%A3o-20b63434b/',
     },
     {
       icon: <Mail size={24} />,
       label: 'Email',
-      href: 'mailto:andre@anderdev.com',
+      href: 'mailto:andrejudiao@gmail.com',
     },
   ]
 
