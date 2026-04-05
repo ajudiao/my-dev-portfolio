@@ -67,7 +67,7 @@ function Home() {
               className="text-xl md:text-2xl text-gray-300 mb-4"
               variants={itemVariants}
             >
-              (AnderDev)
+              (Ander.Dev)
             </motion.p>
 
             <motion.p

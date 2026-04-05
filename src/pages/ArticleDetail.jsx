@@ -5,196 +5,33 @@ import { Calendar, User, Clock, ArrowLeft, Share2 } from 'lucide-react'
 function ArticleDetail() {
   const { id } = useParams()
 
-  const blogPosts = [
+   const blogPosts = [
     {
       id: 1,
-      title: 'Introdução ao Spring Boot',
-      excerpt: 'Aprenda como começar com Spring Boot e criar sua primeira aplicação REST.',
-      date: '15 de Dezembro, 2024',
-      category: 'Back-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop',
-      readTime: '8 min',
-      content: `
-        <h2>O que é Spring Boot?</h2>
-        <p>Spring Boot é um framework Java que simplifica o desenvolvimento de aplicações baseadas em Spring. Ele oferece uma maneira rápida e fácil de criar aplicações Spring prontas para produção.</p>
-
-        <h3>Benefícios do Spring Boot</h3>
-        <ul>
-          <li>Configuração automática inteligente</li>
-          <li>Servidor incorporado (Tomcat, Jetty, etc.)</li>
-          <li>Dependências pré-configuradas (starters)</li>
-          <li>Pronto para produção</li>
-          <li>Sem geração de código ou configuração XML</li>
-        </ul>
-
-        <h3>Primeiros Passos</h3>
-        <p>Para começar com Spring Boot, você precisa ter Java instalado e conhecimento básico de programação orientada a objetos.</p>
-
-        <p>O framework utiliza anotações como @SpringBootApplication, @RestController e @RequestMapping para simplificar a configuração de suas aplicações.</p>
-
-        <h3>Conclusão</h3>
-        <p>Spring Boot é uma excelente escolha para desenvolvedores Java que desejam criar aplicações web robustas e escaláveis rapidamente.</p>
-      `,
+      title: 'React Hooks: State e Effects',
+      excerpt: 'Entenda como usar React Hooks para gerenciar estado e efeitos em seus componentes.',
+      date: '12 de Dezembro, 2025',
+      category: 'Front-end',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaN3Kl_NWhYvkhhxPgxkx_-QiWUiTUMF8FA&s',
+      readTime: '10 min',
     },
     {
       id: 2,
-      title: 'React Hooks: State e Effects',
-      excerpt: 'Entenda como usar React Hooks para gerenciar estado e efeitos em seus componentes.',
-      date: '12 de Dezembro, 2024',
+      title: 'Design Responsivo com Tailwind CSS',
+      excerpt: 'Dicas e truques para criar layouts responsivos e elegantes com Tailwind CSS.',
+      date: '03 de Janeiro, 2026',
       category: 'Front-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=800&h=400&fit=crop',
-      readTime: '10 min',
-      content: `
-        <h2>Entendendo React Hooks</h2>
-        <p>React Hooks são funções que permitem você "conectar" aos recursos do React. Eles foram introduzidos no React 16.8 e revolucionaram a forma como escrevemos componentes.</p>
-
-        <h3>useState Hook</h3>
-        <p>O hook useState permite adicionar estado a componentes funcionais. É a forma mais simples de gerenciar estado em React.</p>
-
-        <h3>useEffect Hook</h3>
-        <p>O hook useEffect permite executar efeitos colaterais em componentes funcionais. Use-o para buscar dados, inscrever-se a um serviço ou atualizar o DOM manualmente.</p>
-
-        <h3>Outros Hooks Importantes</h3>
-        <ul>
-          <li>useContext - Para acessar contexto sem envolvimento</li>
-          <li>useReducer - Para gerenciar estado complexo</li>
-          <li>useCallback - Para memorizar callbacks</li>
-          <li>useMemo - Para memorizar valores computados</li>
-          <li>useRef - Para acessar o DOM diretamente</li>
-        </ul>
-
-        <h3>Conclusão</h3>
-        <p>React Hooks simplificam o desenvolvimento de componentes React e tornam o código mais legível e reutilizável.</p>
-      `,
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9S8fWpeNbB7pmx41vExmLuHt3a35erstzg&s',
+      readTime: '6 min',
     },
     {
       id: 3,
-      title: 'Design Responsivo com Tailwind CSS',
-      excerpt: 'Dicas e truques para criar layouts responsivos e elegantes com Tailwind CSS.',
-      date: '8 de Dezembro, 2024',
-      category: 'Front-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1576628346281-bb2b276e3a4e?w=800&h=400&fit=crop',
-      readTime: '6 min',
-      content: `
-        <h2>Tailwind CSS para Design Responsivo</h2>
-        <p>Tailwind CSS é um framework CSS utilitário que permite criar designs responsivos rapidamente sem sair do seu HTML.</p>
-
-        <h3>Mobile-First Approach</h3>
-        <p>Tailwind segue a abordagem mobile-first, o que significa que você começa a estilizar para dispositivos móveis e depois adiciona estilos para telas maiores.</p>
-
-        <h3>Breakpoints</h3>
-        <p>Os breakpoints padrão do Tailwind são: sm (640px), md (768px), lg (1024px), xl (1280px) e 2xl (1536px).</p>
-
-        <h3>Benefícios</h3>
-        <ul>
-          <li>Desenvolvimento rápido</li>
-          <li>Tamanho de arquivo pequeno</li>
-          <li>Facilmente customizável</li>
-          <li>Comunidade ativa</li>
-          <li>Documentação excelente</li>
-        </ul>
-
-        <h3>Conclusão</h3>
-        <p>Tailwind CSS é uma ferramenta poderosa para criar designs responsivos e modernos com facilidade.</p>
-      `,
-    },
-    {
-      id: 4,
       title: 'Segurança em APIs RESTful',
       excerpt: 'Implemente autenticação JWT e outras práticas de segurança em suas APIs.',
-      date: '5 de Dezembro, 2024',
+      date: '10 de Janeiro, 2026',
       category: 'Back-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1516389573885-cdc6b3fbf200?w=800&h=400&fit=crop',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVGMDcr5GtN4xi1Zt2MaRt0NMbrGypYU0ZA&s',
       readTime: '12 min',
-      content: `
-        <h2>Segurança em APIs RESTful</h2>
-        <p>A segurança é crítica ao desenvolver APIs RESTful. Existem várias práticas e técnicas que você pode implementar para proteger seus dados.</p>
-
-        <h3>Autenticação com JWT</h3>
-        <p>JWT (JSON Web Tokens) é um padrão aberto que define uma forma compacta e autossuficiente de transmitir informações entre partes como um objeto JSON.</p>
-
-        <h3>HTTPS/SSL</h3>
-        <p>Sempre use HTTPS para criptografar dados em trânsito. SSL/TLS fornece uma camada de segurança entre cliente e servidor.</p>
-
-        <h3>Rate Limiting</h3>
-        <p>Implemente rate limiting para proteger suas APIs contra ataques de força bruta e abuso.</p>
-
-        <h3>Validação de Entrada</h3>
-        <ul>
-          <li>Valide todos os dados de entrada</li>
-          <li>Use whitelist sempre que possível</li>
-          <li>Escape dados adequadamente</li>
-          <li>Use prepared statements para consultas SQL</li>
-        </ul>
-
-        <h3>Conclusão</h3>
-        <p>Implementar boas práticas de segurança é essencial para proteger seus usuários e dados.</p>
-      `,
-    },
-    {
-      id: 5,
-      title: 'Performance: Otimizando Queries SQL',
-      excerpt: 'Técnicas avançadas para otimizar suas consultas SQL e melhorar performance.',
-      date: '1 de Dezembro, 2024',
-      category: 'Back-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=800&h=400&fit=crop',
-      readTime: '11 min',
-      content: `
-        <h2>Otimizando Queries SQL</h2>
-        <p>A performance de uma aplicação frequentemente depende de quão eficiente são suas queries SQL. Aqui estão algumas técnicas para otimizá-las.</p>
-
-        <h3>Índices</h3>
-        <p>Criar índices nas colunas que você frequentemente usa em cláusulas WHERE, JOIN e ORDER BY pode melhorar drasticamente a performance.</p>
-
-        <h3>Avoid N+1 Queries</h3>
-        <p>O problema N+1 ocorre quando você faz uma query para obter uma lista de itens e depois uma query adicional para cada item. Use JOINs sempre que possível.</p>
-
-        <h3>Selecione Apenas as Colunas Necessárias</h3>
-        <p>Em vez de usar SELECT *, especifique apenas as colunas que você realmente precisa.</p>
-
-        <h3>Use EXPLAIN</h3>
-        <p>O comando EXPLAIN mostra como o banco de dados executa uma query, ajudando você a identificar gargalos.</p>
-
-        <h3>Conclusão</h3>
-        <p>Otimizar suas queries SQL é fundamental para construir aplicações de alta performance.</p>
-      `,
-    },
-    {
-      id: 6,
-      title: 'WebSocket em Tempo Real com Java',
-      excerpt: 'Construa aplicações em tempo real usando WebSocket com Spring Boot.',
-      date: '28 de Novembro, 2024',
-      category: 'Back-end',
-      author: 'André Judião',
-      image: 'https://images.unsplash.com/photo-1516389573885-cdc6b3fbf200?w=800&h=400&fit=crop',
-      readTime: '9 min',
-      content: `
-        <h2>WebSocket com Spring Boot</h2>
-        <p>WebSocket fornece uma conexão bidirecional de dupla mão sobre uma única conexão TCP, permitindo comunicação em tempo real entre cliente e servidor.</p>
-
-        <h3>Configuração Básica</h3>
-        <p>Spring Boot facilita a configuração de WebSockets com a anotação @EnableWebSocketMessageBroker e a classe WebSocketMessageBrokerConfigurer.</p>
-
-        <h3>Casos de Uso</h3>
-        <ul>
-          <li>Chat em tempo real</li>
-          <li>Notificações push</li>
-          <li>Colaboração em tempo real</li>
-          <li>Dashboards ao vivo</li>
-          <li>Streaming de dados</li>
-        </ul>
-
-        <h3>Segurança</h3>
-        <p>Implemente autenticação e autorização adequadas para WebSocket. Configure CSRF protection e valide todas as mensagens recebidas.</p>
-
-        <h3>Conclusão</h3>
-        <p>WebSocket é uma ferramenta poderosa para criar aplicações interativas em tempo real com Java e Spring Boot.</p>
-      `,
     },
   ]
 
