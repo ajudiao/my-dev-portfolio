@@ -31,11 +31,11 @@ function Projects() {
     },
     {
       id: 3,
-      title: 'RedStore',
+      title: 'RedStore UI',
       description: 'Este projeto consiste no desenvolvimento da interface de um website de e-commerce, utilizando apenas HTML, CSS e JavaScript.',
       image: redstore,
       technologies: ['HTML', 'CSS', 'JS'],
-      category: 'backend',
+      category: 'frontend',
       github: 'https://github.com/ajudiao/redstore-ecommerce-ui',
       demo: 'https://ajudiao.github.io/redstore-ecommerce-ui/',
       },
