@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react' 
+import hooks from '../assets/hooks.webp'
+import tailwind from '../assets/tailwind.jpeg'
+import segurancaDeApiPraticas from '../assets/seguranca-de-api-praticas.webp'
 
 function Blog() {
   const blogPosts = [
@@ -10,7 +13,7 @@ function Blog() {
       excerpt: 'Entenda como usar React Hooks para gerenciar estado e efeitos em seus componentes.',
       date: '12 de Dezembro, 2025',
       category: 'Front-end',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaN3Kl_NWhYvkhhxPgxkx_-QiWUiTUMF8FA&s',
+      image: hooks,
       readTime: '10 min',
     },
     {
@@ -19,7 +22,7 @@ function Blog() {
       excerpt: 'Dicas e truques para criar layouts responsivos e elegantes com Tailwind CSS.',
       date: '03 de Janeiro, 2026',
       category: 'Front-end',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9S8fWpeNbB7pmx41vExmLuHt3a35erstzg&s',
+      image: tailwind,
       readTime: '6 min',
     },
     {
@@ -28,7 +31,7 @@ function Blog() {
       excerpt: 'Implemente autenticação JWT e outras práticas de segurança em suas APIs.',
       date: '10 de Janeiro, 2026',
       category: 'Back-end',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVGMDcr5GtN4xi1Zt2MaRt0NMbrGypYU0ZA&s',
+      image: segurancaDeApiPraticas,
       readTime: '12 min',
     },
   ]
