@@ -3,6 +3,8 @@ import { useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import websitecfitel from '../assets/projects-img/websitecfitel.png'
 import redstore from '../assets/projects-img/redstore.png'
+import bengafood from '../assets/projects-img/bengafood.png'
+import appPomodoro from '../assets/projects-img/app-pomodoro.png'
 
 
 function Projects() {
@@ -23,11 +25,11 @@ function Projects() {
       id: 2,
       title: 'App Pomodoro',
       description: 'A aplicação ajuda a organizar o tempo de estudo ou trabalho utilizando a técnica Pomodoro, com interface limpa e responsiva.',
-      image: 'https://raw.githubusercontent.com/ajudiao/app-pomodoro/refs/heads/main/src/assets/pomodoro-preview.png',
+      image: appPomodoro,
       technologies: ['React', 'Styled Components', 'TypeScript'],
       category: 'frontend',
       github: 'https://github.com/ajudiao/app-pomodoro',
-      demo: 'https://indisponivel.com',
+      demo: 'https://app-pomodoro-brown.vercel.app/',
     },
     {
       id: 3,
@@ -38,7 +40,17 @@ function Projects() {
       category: 'frontend',
       github: 'https://github.com/ajudiao/redstore-ecommerce-ui',
       demo: 'https://ajudiao.github.io/redstore-ecommerce-ui/',
-      },
+    },
+    {
+      id: 4,
+      title: 'BengaFood',
+      description: 'Website de um estabelecimento de fast food desenvolvido com React JS e Tailwind CSS, permitindo visualizar produtos como hambúrgueres, pizzas, cachorros e refeições de forma moderna e responsiva.',
+      image: bengafood, // certifica-te que importaste a imagem
+      technologies: ['React', 'JavaScript', 'Tailwind CSS'],
+      category: 'frontend',
+      github: 'https://github.com/ajudiao/benga-food-website', // troca pelo teu link real
+      demo: 'https://benga-food-website.vercel.app/', // ou outro deploy que estiveres a usar
+    },
   ]
 
   const categories = [
@@ -102,11 +114,10 @@ function Projects() {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                selectedCategory === category.id
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${selectedCategory === category.id
                   ? 'bg-gradient-to-r from-primary to-secondary text-dark-900'
                   : 'bg-dark-700 text-gray-300 border border-primary/20 hover:border-primary hover:text-primary'
-              }`}
+                }`}
             >
               {category.label}
             </button>
